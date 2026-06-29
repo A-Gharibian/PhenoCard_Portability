@@ -21,7 +21,8 @@ A two-step SQL pipeline validating phenotype-derived features across cohort size
 - ATHENA vocabulary files ([athena.ohdsi.org](https://athena.ohdsi.org))
 - MIMIC-IV access via [PhysioNet](https://physionet.org/content/mimiciv/)
 
-> MIMIC-IV access requires PhysioNet credentialing and the CITI data privacy course. **This repository contains no patient data.**
+> MIMIC-IV access requires PhysioNet credentialing.
+> **This repository contains no patient data.**
 
 ---
 
