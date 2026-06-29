@@ -79,5 +79,5 @@ If you use this pipeline or the associated dataset, please cite:
 
 Code in this repository is released under the **MIT License** — see [LICENSE](LICENSE) for the full text.
 
-MIMIC-IV data is subject to the [PhysioNet Credentialed Health Data License](https://physionet.org/content/mimiciv/view-license/).
+MIMIC-IV data is subject to the [PhysioNet Credentialed Health Data License](https://physionet.org/content/mimiciv/view-license/3.1/).
 ATHENA vocabulary files are subject to the [OHDSI vocabulary license](https://athena.ohdsi.org).
