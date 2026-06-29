@@ -72,7 +72,7 @@ A two-step SQL pipeline validating phenotype-derived features across cohort size
 ## Citation
 
 If you use this pipeline or the associated dataset, please cite:
-
+[under review]
 ---
 
 ## License
