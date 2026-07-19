@@ -4,16 +4,16 @@
  * Purpose : Optional post-processing step that enriches p2_final_ml_matrix
  *           with patient demographics and applies inclusion/exclusion criteria.
  *
- *           Run this after phase2_validation_pipeline.sql if you want a
+ *           Run this after p2_build_pipeline.sql if you want a
  *           filtered subset of the matrix. Re-run with different WHERE
  *           conditions without rebuilding the full pipeline.
  *
- * Input   : p2_final_ml_matrix (built by phase2_validation_pipeline.sql)
+ * Input   : p2_final_ml_matrix (built by p2_build_pipeline.sql)
  * Output  : p2_filtered_ml_matrix
  */
 
 -- Uncomment if running this script standalone, outside the same session
--- as phase2_validation_pipeline.sql:
+-- as p2_build_pipeline.sql:
 -- SET variable mimic_path = 'data/mimic/hosp/';
 
 CREATE OR REPLACE TABLE p2_filtered_ml_matrix AS

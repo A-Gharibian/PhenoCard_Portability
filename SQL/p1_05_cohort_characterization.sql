@@ -3,9 +3,9 @@
  *
  * Purpose : Produce a cohort summary table describing the
  *           demographic and target variable distribution of the Phase 1
- *           ML matrix. Intended to be run after phase1_build_pipeline.sql
+ *           ML matrix. Intended to be run after p1_build_pipeline.sql
  *
- * Input   : final_ml_matrix (built by phase1_build_pipeline.sql)
+ * Input   : final_ml_matrix (built by p1_build_pipeline.sql)
  * Output  : result set only (no table created)
  *
  */
