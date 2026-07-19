@@ -74,8 +74,8 @@ A two-step SQL pipeline validating phenotype-derived features across cohort size
 ## Known Limitations
 
 - **Asymmetric index date definition (Step 1).** Cases are indexed at their first diagnosis date; controls at their most recent visit date. Controls are therefore observed over a longer history by construction, introducing a potential observation-window imbalance. A more rigorous design would use risk-set sampling to draw control index dates. This is not implemented here to keep the pipeline simple and transparent for a demonstrative project.
-- **Propensity score matching is not implemented for MIMIC-IV.** This is the most significant open limitation. The 10,000-patient Step 2 pool is drawn at random and is not demographically matched to the Step 1 cohort. The two `*_cohort_characterization.sql` scripts are provided to quantify how far apart the cohorts are, but no matching step is applied. **Any direct comparison of Step 1 and Step 2 results is therefore confounded by cohort composition** and should be read as indicative only, not as a like-for-like portability estimate.
-- **Age is not directly available** in either OMOP or MIMIC-IV due to de-identification. `year_of_birth` (Step 1) and `anchor_age` (Step 2) are proxies, not true ages, and are anchored to different de-identification schemes.
+- **Propensity score matching is not implemented for MIMIC-IV.** The 10,000-patient Step 2 pool is drawn at random and is not demographically matched to the Step 1 cohort. The two `*_cohort_characterization.sql` scripts are provided to quantify how far apart the cohorts are, but no matching step is applied. **Any direct comparison of Step 1 and Step 2 results is therefore confounded by cohort composition** and should be read as indicative only.
+- **Age is not directly available** in either OMOP or MIMIC-IV due to de-identification. `year_of_birth` (Step 1) and `anchor_age` (Step 2) are proxies, not true ages.
 
 ---
 
